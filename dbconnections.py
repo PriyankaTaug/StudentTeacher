@@ -10,7 +10,7 @@ class DatabaseSetup:
         self.password = "123"
         self.conn = psycopg2.connect(
             host=self.host,       
-            port=self.port,              # e.g., "5432" (default PostgreSQL port)
+            port=self.port,            
             database=self.database,
             user=self.user,
             password=self.password
