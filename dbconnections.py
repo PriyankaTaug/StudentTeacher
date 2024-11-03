@@ -20,7 +20,7 @@ class DatabaseSetup:
                 # Create a cursor to perform database operations
         cur = self.conn.cursor()
 
-        # Example: Create a student_management table
+        # Create a student_management table
         cur.execute(""" 
             CREATE TABLE IF NOT EXISTS student_management (
                 id SERIAL PRIMARY KEY,
@@ -31,7 +31,7 @@ class DatabaseSetup:
             );
         """)
 
-        # Example: Create a teacher_management table
+        # Create a teacher_management table
         cur.execute(""" 
             CREATE TABLE IF NOT EXISTS teacher_management (
                 id SERIAL PRIMARY KEY,
